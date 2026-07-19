@@ -1,0 +1,33 @@
+title: "AI Voice Agent for Inbound Carrier Call Handling"
+slug: ai-voice-agent
+type: client-engagement
+track: telephony
+org: asrp
+client: "WireBee"
+client_context: "A cloud telephony platform for freight brokers (US)"
+domain: [voice-ai, telephony]
+stack: [typescript, hono, mysql, redis, nats, jambonz, bandwidth, ultravox]
+role: "ASRP owned the voice-AI feature — design, implementation, and roadmap"
+engagement: contract
+period: {start: 2025-12, end: 2026-04}
+status: paused
+confidentiality: public
+links: {repo: "", demo: "", site: "", docs: ""}
+summary: "Conversational voice-AI that takes over from a freight-logistics IVR when a carrier's load can't be matched, identifies the shipment by voice, and routes a qualified call to a human — deterministic under the hood, never invents data."
+highlights:
+  - "4-channel AI↔backend integration: audio WS, HTTP tools, HMAC webhooks, live data socket"
+  - "Non-hallucinating by construction — the backend owns all data and all decisions; the agent only converses and reports"
+  - "Decomposed a monolithic agent into a multi-agent system; shipped the first agent (a deterministic load-finder) as the POC — delivered production-ready"
+title_ru: "AI-голосовой агент для обработки входящих звонков перевозчиков"
+role_ru: "ASRP полностью отвечал за голосовой ИИ — дизайн, реализация и роадмап"
+summary_ru: "Диалоговый голосовой ИИ, который подхватывает звонок у IVR грузоперевозочной компании, когда груз перевозчика не удаётся сопоставить автоматически, идентифицирует отправление по голосу и переводит квалифицированный звонок на оператора — детерминированный по своей сути, никогда не выдумывает данные."
+highlights_ru:
+  - "4-канальная интеграция AI↔бэкенд: аудио по WS, HTTP-инструменты, HMAC-вебхуки, сокет живых данных"
+  - "Не галлюцинирует по конструкции — все данные и решения принимает бэкенд, агент только ведёт диалог и отчитывается"
+  - "Разбили монолитного агента на мультиагентную систему; первый агент (детерминированный поиск груза) как PoC — сразу готовый к продакшну"
+metrics:
+  - {label: "Intent-classification accuracy", value: ">90%", kind: target}
+  - {label: "Qualification phase", value: "<30 s", kind: target}
+featured: 1
+verified_against_source: 2026-07-11
+updated: 2026-07-16

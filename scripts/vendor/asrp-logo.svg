@@ -1,0 +1,15 @@
+<svg width="245" height="158" viewBox="0 0 245 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="166" cy="79" r="78" fill="white" stroke="#393F88" stroke-width="2"/>
+<path d="M157 79C157 122.078 122.078 157 79 157C35.9218 157 1 122.078 1 79C1 35.9218 35.9218 1 79 1C122.078 1 157 35.9218 157 79Z" fill="white" stroke="#393F88" stroke-width="2"/>
+<ellipse cx="122.5" cy="71" rx="78.5" ry="30" stroke="#D8DAFF"/>
+<ellipse cx="122" cy="72" rx="64" ry="24" stroke="#D8DAFF"/>
+<ellipse cx="122" cy="72.5" rx="52" ry="18.5" stroke="#D8DAFF"/>
+<ellipse cx="122.5" cy="70" rx="40.5" ry="16" stroke="#D8DAFF"/>
+<ellipse cx="122.5" cy="70.5" rx="18.5" ry="6.5" stroke="#D8DAFF"/>
+<ellipse cx="122.5" cy="70.5" rx="26.5" ry="10.5" stroke="#D8DAFF"/>
+<ellipse cx="122.5" cy="71.5" rx="97.5" ry="37.5" stroke="#D8DAFF"/>
+<path d="M189.5 25.5H56L122.5 142.5L189.5 25.5Z" stroke="#848ACB" stroke-width="2"/>
+<circle cx="122.5" cy="70.5" r="4.5" fill="#31479F"/>
+<circle cx="166" cy="79" r="78" stroke="#393F88" stroke-width="2"/>
+<path d="M157 79C157 122.078 122.078 157 79 157C35.9218 157 1 122.078 1 79C1 35.9218 35.9218 1 79 1C122.078 1 157 35.9218 157 79Z" stroke="#393F88" stroke-width="2"/>
+</svg>

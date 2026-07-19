@@ -1,0 +1,35 @@
+title: "In-House Ring-All Call Routing (Smart Queue)"
+slug: smart-queue
+type: client-engagement
+track: telephony
+org: asrp
+client: "WireBee"
+client_context: "SaaS platform for freight-logistics call centers (US)"
+domain: [telephony]
+stack: [typescript, hono, bun, mysql, redis, nats, jambonz, bandwidth, trpc]
+role: "ASRP owned the call-routing subsystem end to end — design, implementation, roadmap"
+engagement: contract
+period: {start: 2026-03, end: 2026-07}
+status: pilot
+confidentiality: public
+links: {repo: "", demo: "", site: "", docs: ""}
+summary: "Platform-native ring-all queue: every logged-in agent rings at once and the fastest answer claims the call via a Redis lock (exactly one winner), with an idempotent fallback when no one answers."
+highlights:
+  - "Deterministic first-to-answer claim under a simultaneous-answer race (Redis Redlock, exactly one winner)"
+  - "Single Jambonz dial with a target[] array + per-target confirm hook — no keypad, no serial hunt"
+  - "Rebuilt from scratch after a merged conference-bridge/press-1 POC was fully reverted"
+  - "Pilot to replace the external-PBX hunt-group; answer-detection hardening the main pre-production item"
+title_ru: "Собственная маршрутизация звонков Ring-All (Smart Queue)"
+role_ru: "ASRP полностью владел подсистемой маршрутизации звонков — дизайн, реализация, роадмап"
+summary_ru: "Нативная для платформы очередь ring-all: при звонке звонят сразу всем залогиненным агентам, а звонок забирает тот, кто ответил первым, через блокировку Redis (ровно один победитель), с идемпотентным fallback, если никто не ответил."
+highlights_ru:
+  - "Детерминированный claim первого ответившего агента в условиях гонки одновременных ответов (Redis Redlock, ровно один победитель)"
+  - "Один звонок Jambonz с массивом target[] и хуком подтверждения на каждую цель — без тонового набора, без последовательного перебора"
+  - "Пересобрали с нуля после того, как смёрженный PoC на конференц-мосте/press-1 был полностью откачен"
+  - "Пилот на замену hunt-group внешней АТС; основной пункт перед продакшном — усиление детектирования ответа"
+metrics:
+  - {label: "Max agents rung per call", value: "10 (configurable)", kind: target}
+  - {label: "Claim lock lease", value: "5 s", kind: target}
+featured: 1
+verified_against_source: 2026-07-11
+updated: 2026-07-16

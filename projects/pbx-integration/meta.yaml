@@ -1,0 +1,30 @@
+title: "Cloud PBX Integration for Contact-Center Queues & Agents"
+slug: pbx-integration
+type: client-engagement
+track: telephony
+org: asrp
+client: "WireBee"
+client_context: "Contact centers running their telephony on an external cloud PBX (freight-logistics, US)"
+domain: [telephony, integration]
+stack: [typescript, nodejs, bun, drizzle, mysql, redis, nats]
+role: "ASRP owned the external-PBX integration — design, implementation, and hardening"
+engagement: contract
+period: {start: 2026-03, end: null}
+status: production
+confidentiality: public
+links: {repo: "", demo: "", site: "", docs: ""}
+summary: "The largest project of the engagement: an integration that lets organizations drive their existing external cloud PBX (queues, agents, devices) from one modern UI — via call correlation and a self-healing reconciliation layer."
+highlights:
+  - "Asymmetric source-of-truth: PBX authoritative for live state, DB authoritative for UI reads; three convergence paths (direct, webhooks, a 15-min reaper)"
+  - "Call correlation via a stable SIP-Call-ID chain, with a Redis buffer-and-replay that fixes a fast-call event race"
+  - "Self-healing in both directions (reverse-heal, active-call protection) + failure-tolerant claims; OAuth2 PBX client with concurrency-safe token refresh"
+title_ru: "Интеграция облачной АТС для очередей и агентов контакт-центра"
+role_ru: "ASRP отвечал за интеграцию с внешней облачной АТС — дизайн, реализация и укрепление"
+summary_ru: "Крупнейший проект в рамках контракта: интеграция, позволяющая управлять существующей внешней облачной АТС (очередями, агентами, устройствами) из одного современного интерфейса — через корреляцию звонков и самовосстанавливающийся слой сверки состояния."
+highlights_ru:
+  - "Асимметричный источник истины: АТС авторитетна для живого состояния, БД авторитетна для чтения в UI; три пути сходимости (напрямую, через вебхуки, 15-минутный ример)"
+  - "Корреляция звонков через устойчивую цепочку SIP-Call-ID, с буфером-и-повтором на Redis, устраняющим гонку событий при быстрых звонках"
+  - "Самовосстановление в обе стороны (reverse-heal, защита активного звонка) + устойчивые к сбоям claim'ы; OAuth2-клиент АТС с потокобезопасным обновлением токена"
+featured: 1
+verified_against_source: 2026-07-11
+updated: 2026-07-17

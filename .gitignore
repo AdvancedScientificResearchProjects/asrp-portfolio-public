@@ -1,0 +1,17 @@
+dist/
+.DS_Store
+*.tmp
+__pycache__/
+
+# Raw demo recordings are blocked by default — they may hold un-redacted
+# client/PII data (NDA). Only recordings explicitly cleared for publication
+# are un-ignored below and tracked via Git LFS (see .gitattributes).
+*.mp4
+*.mov
+*.MOV
+!demos/pbx_combined_final/pbx_combined_final.mp4
+!demos/voice-agent-load-found/voice-agent-load-found.mp4
+!demos/voice-agent-load-not-found/voice-agent-load-not-found.mp4
+!demos/cogit-ai-organizations-overview/cogit-ai-organizations-overview.mp4
+!demos/cogit-create-agent-router/cogit-create-agent-router.mp4
+!demos/cogit-50-agents-test/cogit-50-agents-test.mp4

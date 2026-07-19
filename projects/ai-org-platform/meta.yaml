@@ -1,0 +1,40 @@
+title: "Cogit — Multi-Tenant AI-Organizations Platform"
+slug: ai-org-platform
+type: client-engagement
+track: ai-organization
+org: asrp
+client: "Cogit"
+client_context: "A European SaaS vendor building a platform to create and deploy business AI agents across web chat, email, and Outlook"
+domain: [saas-platform, ai-automation]
+stack: [typescript, nestjs, react, postgresql, python, fastapi, gemini, anthropic, docker]
+role: "Core engineering / #1 contributor — multi-tenant NestJS backend, React admin dashboard, agent-deployment layer"
+engagement: contract
+period: {start: 2025-10, end: null}
+status: production
+confidentiality: public
+links:
+  repo: ""
+  demo: ""
+  site: ""
+  docs: ""
+summary: "Admin dashboard for building and deploying business AI agents across web chat, email, and Outlook — multi-tenant NestJS + React + PostgreSQL (row-level security), agents on Gemini + Claude, with a Python agent-authoring service."
+highlights:
+  - "Multi-tenant SaaS: PostgreSQL row-level security (FORCE RLS), JWT tenant context, invite-only auth"
+  - "One agent, three deployment channels — website widget, Outlook add-in, and email processor"
+  - "Natural-language agent authoring: describe an agent in plain text, get a configured agent back in ~1 min"
+  - "#1 contributor (~45%) across both core repos; owned the staging → production release flow"
+title_ru: "Cogit — мультитенантная платформа для AI-организаций"
+role_ru: "Основная разработка / контрибьютор №1 — мультитенантный бэкенд на NestJS, админ-панель на React, слой развёртывания агентов"
+summary_ru: "Админ-панель для создания и развёртывания бизнес-ИИ-агентов в веб-чате, email и Outlook — мультитенантная связка NestJS + React + PostgreSQL (row-level security), агенты на Gemini + Claude, с Python-сервисом для авторинга агентов."
+highlights_ru:
+  - "Мультитенантный SaaS: row-level security в PostgreSQL (FORCE RLS), JWT-контекст тенанта, авторизация только по инвайтам"
+  - "Один агент — три канала развёртывания: виджет на сайте, надстройка Outlook и обработчик почты"
+  - "Авторинг агента на естественном языке: опишите агента текстом — получите настроенного агента примерно за 1 минуту"
+  - "Контрибьютор №1 (~45%) в обоих ключевых репозиториях; владел процессом релиза staging → production"
+metrics:
+  - {label: "Deployment channels per agent", value: "3 (web / Outlook / email)", kind: measured}
+  - {label: "Agent authoring from prose", value: "~1 min", kind: target}
+  - {label: "Contribution (both core repos)", value: "#1, ~45% of commits", kind: measured}
+featured: 2
+verified_against_source: 2026-07-16
+updated: 2026-07-19

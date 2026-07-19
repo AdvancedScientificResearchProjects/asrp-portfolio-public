@@ -1,0 +1,41 @@
+title: "Arcanum Landing Engine — AI Course-Landing Generation for an Online School"
+slug: arcanum-landing-engine
+type: own-product
+track: ai-organization
+org: asrp
+client: "Arcanum 12th (ASRP)"
+client_context: "ASRP's own multilingual online school (arcanum12th.education, 14 courses): a full-cycle AI system that turns course data into a published marketing landing page"
+domain: [ai-automation, saas-platform]
+stack: [python, fastapi, nodejs, postgresql, redis, typescript, docker]
+role: "ASRP — full-cycle design & build across four repos: the OpenAI landing-generator agent, the GraphQL backend + orchestration, the Nuxt authoring editor, and the public Nuxt renderer"
+engagement: product
+period: {start: 2026-05, end: null}
+status: production
+confidentiality: public
+links:
+  repo: ""
+  demo: ""
+  site: "https://arcanum12th.education"
+  docs: ""
+summary: "ASRP's full-cycle AI course-landing system for its own school Arcanum 12th (live). A GraphQL API assembles course data, an OpenAI agent plans/writes/validates a section payload, a Nuxt editor refines it, a public site renders it."
+highlights:
+  - "Full cycle across 4 repos: OpenAI agent (plan→compose→validate→repair) → GraphQL API (context + orchestration + storage) → Nuxt authoring editor → public Nuxt renderer"
+  - "The unit of exchange is one landing payload — `{ sections: [{id,type,props}], themeStyles }` — persisted per (course, language) as JSONB, rendered by a type→component map"
+  - "Authors refine AI output visually: ⌘K block palette (~60 section types), inline per-block editors, light/dark theme customizer, 14 locales, import/export JSON"
+  - "Live in production at arcanum12th.education across 14 courses and multiple locales — the same platform also feeds a Telegram-bot channel (course catalog, education flow)"
+title_ru: "Arcanum Landing Engine — AI-генерация лендингов курсов для онлайн-школы"
+role_ru: "ASRP — проектирование и разработка полного цикла в четырёх репозиториях: агент-генератор на OpenAI, GraphQL-бэкенд + оркестрация, Nuxt-редактор авторов и публичный Nuxt-рендерер"
+summary_ru: "AI-система полного цикла для лендингов курсов собственной школы ASRP Arcanum 12th (live). GraphQL-API собирает данные курса, агент OpenAI планирует/пишет/валидирует payload секций, Nuxt-редактор их дорабатывает, публичный сайт рендерит."
+highlights_ru:
+  - "Полный цикл в 4 репозиториях: агент на OpenAI (plan→compose→validate→repair) → GraphQL-API (контекст + оркестрация + хранение) → Nuxt-редактор авторов → публичный Nuxt-рендерер"
+  - "Единица обмена — один landing payload `{ sections: [{id,type,props}], themeStyles }` — хранится per (курс, язык) как JSONB, рендерится мапой type→компонент"
+  - "Авторы дорабатывают вывод AI визуально: ⌘K-палитра блоков (~60 типов секций), инлайн-редакторы, тема light/dark, 14 языков, импорт/экспорт JSON"
+  - "В продакшне на arcanum12th.education, 14 курсов и несколько локалей — та же платформа питает и Telegram-бот-канал (каталог курсов, обучение)"
+metrics:
+  - {label: "Live courses on the platform", value: "14 (multiple locales)", kind: measured}
+  - {label: "Generation pipeline stages", value: "4 (plan · compose · validate · repair)", kind: measured}
+  - {label: "Section block types in the catalog", value: "~60 (editor) / ~48 (agent)", kind: measured}
+  - {label: "UI locales", value: "14", kind: measured}
+featured: 1
+verified_against_source: 2026-07-16
+updated: 2026-07-16
